@@ -11,10 +11,15 @@ machine learning models for compound activity prediction.
 
 ## 📌 Project Overview
 
-- Molecular feature generation using **RDKit**
-- Fingerprint-based representation of small molecules
-- Supervised machine learning models for activity prediction
-- Focus on **CXCR receptor–related inhibitor screening**
+- Curation of kinase protein–ligand complexes from PDBbind v2020 for training and RCSB PDB for external evaluation
+- Preprocessing of protein–ligand structures for consistent cheminformatics input
+- Generation of ECIF interaction features across multiple distance cutoffs
+- Calculation of RDKit ligand descriptors
+- Construction of ECIF-only and ECIF + RDKit merged feature matrices
+- Hyperparameter tuning and training of multiple regression models
+- Prediction of pIC / binding affinity values
+- Performance evaluation using MSE, RMSE, R², and Pearson Correlation Coefficient (PCC)
+- External prediction for 5,265 non-overlapping kinase complexes
 
 ---
 
